@@ -32,18 +32,40 @@
         <p class="footer-title">Made with &hearts; by Ronakcodes</p>
     </aside>
     <div class="right-container">
-            <div class="section1" id="home">
-                <div class="s1-title">
-                    <p>Hi!</p>
-                    <p>I'm Ronak.</p>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <div class="slider-container">
+            <!-- Radio Buttons to control the slides -->
+            <input type="radio" id="slide1" name="slider" checked>
+            <input type="radio" id="slide2" name="slider">
+        
+            <!-- Slides Wrapper -->
+            <div class="slides">
+                <!-- First Slide -->
+                <div class="slide" id="first-slide">
+                    <h1>Hi! <br>I'm Ronak</h1>
+                    <p>Full Stack Developer Intern</p>
+                    <button class="cv-download">DOWNLOAD CV</button>
                 </div>
-                <br>
-                    <p class="my-intro">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam assumenda, quibusdam laudantium blanditiis praesentium odit magni dolorem, quidem consequatur ipsam molestiae nostrum tempora consectetur doloribus sapiente sit perspiciatis eaque animi?
-                    </p>
-                    <br>
-                    <button class="cv-download" type="button">DOWNLOAD CV <span><img src="./download.png" alt=""></span></button>
+        
+                <!-- Second Slide -->
+                <div class="slide" id="second-slide">
+                    <h1>I am <br>a Designer</h1>
+                    <p>Creative UI/UX Enthusiast</p>
+                    <button class="view-portfolio">VIEW PORTFOLIO</button>
+                </div>
             </div>
+        
+            <!-- Radio Buttons (for the dots) -->
+            <div class="radio-buttons">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+            </div>
+        </div>
+        
+        
+        
     </div>
 </div>
 </body>
