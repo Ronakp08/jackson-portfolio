@@ -38,12 +38,12 @@ body {
   margin-top: 15px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   color: rgb(61, 58, 58);
   text-decoration: none;
 }
 
-.navbar ul li{
+.navbar ul li {
   line-height: 2rem;
   font-size: 16px;
   color: rgb(61, 58, 58);
@@ -66,10 +66,9 @@ body {
   color: rgb(17, 81, 199);
 }
 
-.navbar ul li a:visited{
+.navbar ul li a:visited {
   color: rgb(61, 58, 58);
 }
-
 
 .profilepic {
   height: auto;
@@ -99,9 +98,10 @@ body {
 .right-container {
   width: 85%;
   height: 100%;
-  margin-right: 30vh;
+  margin-right: 23vh;
+  margin-left: 3vh;
   overflow: scroll;
-  overflow-x: hidden
+  overflow-x: hidden;
   /* background-color: rgb(201, 236, 248); */
 }
 
@@ -158,7 +158,7 @@ body {
 
 /* Slider css */
 
-/* Slider Container */
+
 .slider-container {
   position: relative;
   width: 100%;
@@ -166,19 +166,19 @@ body {
   overflow: hidden;
 }
 
-/* Hide the radio buttons */
+
 input[type="radio"] {
   display: none;
 }
 
-/* Slides Wrapper */
+
 .slides {
   display: flex;
-  width: 200%; /* 2 slides (each 100vw) */
+  width: 200%; 
   transition: transform 0.5s ease-in;
 }
 
-/* Individual Slide */
+
 .slide {
   width: 100vw;
   height: 100vh;
@@ -195,7 +195,7 @@ input[type="radio"] {
   position: relative;
 }
 
-/* First and Second Slide Background */
+
 #first-slide {
   background-image: url("./assets/bg-s1.jpg");
 }
@@ -204,16 +204,16 @@ input[type="radio"] {
   background-image: url("./assets/s2bg.avif");
 }
 
-/* Transform slides based on radio button */
+
 #slide1:checked ~ .slides {
-  transform: translateY(0); /* First slide visible */
+  transform: translateY(0); 
 }
 
 #slide2:checked ~ .slides {
-  transform: translate(-50%); /* Second slide visible */
+  transform: translate(-50%); 
 }
 
-/* Radio buttons (dots) for navigation */
+
 .radio-buttons {
   position: absolute;
   bottom: 50px;
@@ -223,7 +223,7 @@ input[type="radio"] {
   gap: 10px;
 }
 
-/* Style for radio buttons (dots) */
+
 .radio-buttons label {
   width: 12px;
   height: 12px;
@@ -233,13 +233,13 @@ input[type="radio"] {
   transition: 0.3s;
 }
 
-/* Active radio button (active dot) */
+
 #slide1:checked ~ .radio-buttons label:nth-child(1),
 #slide2:checked ~ .radio-buttons label:nth-child(2) {
   background: #7a899a;
 }
 
-/* Switch button styles */
+
 .switch-button {
   width: 40px;
   height: 40px;
@@ -251,13 +251,12 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-/* Position switch buttons */
 #first-slide .switch-button {
-  right: 20px; /* On the right side of the first slide */
+  right: 20px; 
 }
 
 #second-slide .switch-button {
-  left: 20px; /* On the left side of the second slide */
+  left: 20px; 
 }
 
 /* Section 2 */
@@ -392,6 +391,7 @@ input[type="radio"] {
   width: 100%;
   height: 150vh;
   background-color: #ffffff;
+  margin-left: 5vh;
 }
 
 .section3-content {
@@ -421,7 +421,7 @@ input[type="radio"] {
   margin-top: 15vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px; 
+  gap: 30px;
   row-gap: 5vh;
 }
 
@@ -441,18 +441,18 @@ input[type="radio"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.s3-cards h6{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.s3-cards h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
-  text-align:center;
+  text-align: center;
 }
 
-.s3-cards p{
+.s3-cards p {
   padding-top: 2vh;
   font-size: 18px;
-  font-weight:100;
+  font-weight: 100;
   color: rgb(151, 141, 141);
-  text-align:center;
+  text-align: center;
 }
 
 .s3-sep-card {
@@ -462,7 +462,7 @@ input[type="radio"] {
   text-align: center;
   padding: 30px 5px;
   right: 15px;
-  overflow: visible; 
+  overflow: visible;
 }
 
 /* Hexagons */
@@ -551,8 +551,7 @@ input[type="radio"] {
   align-items: center;
 }
 
-
-.hex-img{
+.hex-img {
   height: 35px;
   width: 35px;
 }
@@ -560,7 +559,6 @@ input[type="radio"] {
 .s3-cards {
   padding-top: 60px; /* Add space to compensate for hexagon */
 }
-
 
 .s3-card1 {
   border-bottom: 2px rgb(8, 122, 214) solid;
@@ -588,7 +586,6 @@ input[type="radio"] {
 
 /* Section 4 */
 
-
 /* banner */
 
 .s4-banner {
@@ -596,7 +593,7 @@ input[type="radio"] {
   height: 30vh;
   background-image: url(./assets/banner-bg.jpg);
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   justify-content: space-around;
@@ -608,11 +605,11 @@ input[type="radio"] {
 .banner-content h5 {
   font-family: cursive;
   font-size: 40px;
-
 }
 
 .banner-content p {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   padding-top: 5px;
   font-weight: lighter;
   font-size: 16px;
@@ -620,7 +617,7 @@ input[type="radio"] {
 
 /* Section 5 */
 
-.s5-container{
+.s5-container {
   width: 100%;
   height: 70vh;
   margin-top: 20vh;
@@ -639,12 +636,12 @@ input[type="radio"] {
   font-size: 20px;
   margin-top: 15px;
   letter-spacing: 4px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.skills-para{
+.skills-para {
   margin-top: 5vh;
-  font-family:monospace;
+  font-family: monospace;
   font-size: 16px;
   color: #808488;
   text-align: left;
@@ -654,13 +651,12 @@ input[type="radio"] {
 
 /* Progress bars */
 
-.progressbar-container{
+.progressbar-container {
   margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; 
+  gap: 20px;
   row-gap: 5vh;
-  
 }
 
 /* Progress 1 */
@@ -771,7 +767,7 @@ input[type="radio"] {
   border-radius: 10px;
 }
 
-.pcls{
+.pcls {
   width: 80%;
 }
 
@@ -781,106 +777,366 @@ input[type="radio"] {
   margin-bottom: 5px;
 }
 
+/* Section 6 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* responsiv */
-
-/* Mobile Adjustments */
-@media screen and (max-width: 768px) {
-  .main-container {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* Hide navbar by default on mobile */
-  .navbar {
-    width: 0;
-    height: 100%;
-    transition: width 0.3s ease;
-  }
-
-  /* Sidebar opens when hovering over the menu icon */
-  .right-container:hover .navbar {
-    width: 250px; /* Sidebar visible on hover */
-  }
-
-  .right-container {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .slider-container {
-    height: 70vh;
-  }
-
-  .slide {
-    padding-top: 10vh;
-    font-size: 18px;
-  }
-
-  .username {
-    font-size: 28px;
-  }
-
-  .my-intro {
-    font-size: 14px;
-    width: 90%;
-  }
-
-  .cv-download,
-  .view-portfolio {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-  /* Menu Icon (Hamburger) */
-  .menu-icon {
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  /* Hide menu icon for large screens */
-  .menu-toggle-checkbox {
-    display: none;
-  }
+.section6 {
+  height: 40vh;
+  width: 100%;
+  margin-top: 8vh;
+  margin-left: 20px;
 }
 
-/* For very small devices */
-@media screen and (max-width: 480px) {
-  .profilepic {
-    width: 150px;
-  }
+.edu-detail-container {
+  height: auto;
+  width: 95%;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5vh;
+}
 
-  .my-intro {
-    font-size: 12px;
-    width: 90%;
-  }
+.edu-details {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-  .username {
-    font-size: 24px;
-  }
+.edu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #eceff1;
+  color: rgb(59, 54, 54);
+  cursor: pointer;
+}
 
-  .cv-download,
-  .view-portfolio {
-    font-size: 12px;
-    padding: 8px 16px;
-  }
+.edu-content {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  font-family: cursive;
+  font-size: 14px;
+  color: rgb(112, 108, 108);
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked + .edu-title + .edu-content {
+  display: block;
+}
+
+.toggle:checked + .edu-title .toggle-icon {
+  display: none;
+}
+
+.toggle:checked + .edu-title .toggle-icon.hidden {
+  display: inline;
+}
+
+.toggle-icon.hidden {
+  display: none;
+}
+
+.toggle-icon {
+  font-weight: bold;
+}
+
+
+
+
+/* Section 7 */
+
+.pencil{
+  height: 4vh;
+  width:4vh;
+  margin: 2px;
+}
+
+/* Circle */
+
+.circle {
+  height: 5vh;
+  width: 8vh;
+  /* border: 1px solid; */
+  margin: 2vh 2vh;
+  border-radius: 100%;
+}
+
+.circle1{
+  background-color: rgb(47, 110, 228);
+}
+
+.circle2{
+  background-color: rgb(214, 71, 71);
+}
+
+.circle3{
+  background-color: rgb(204, 163, 50);
+}
+
+.circle4{
+  background-color: rgba(133, 36, 197, 0.918);
+}
+
+.circle5{
+  background-color: rgb(80, 184, 158);
+}
+
+/* circle end */
+
+.section7 {
+  height: 120vh;
+  width: 100%;
+  margin-top: 8vh;
+  margin-left: 20px;
+}
+
+.exp-container{
+  margin-top: 5vh;
+  margin-right: 10vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+}
+
+.exp-cnt{
+  display: flex;
+  line-height: 1.5rem;
+  gap: 2vh;
+  height: 15vh;
+  width: auto;
+  width: auto;
+  border: #e8eaec 1px solid;
+}
+
+.exp-card {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.exp-card h5{
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.exp-card h5 span{
+  color: #78807e;
+}
+
+.exp-card p{
+  font-size: 14px;
+  font-family: cursive;
+  color: #494d53;
+}
+
+
+/* Section 8 */
+
+.section8 {
+  height: 180vh;
+  width: 100%;
+  margin-top: 4vh;
+  margin-left: 20px;
+}
+
+.work-titles{
+  margin-top: 5vh;
+  font-family: cursive;
+  font-size: 18px;
+  display: flex;
+  gap: 2vh;
+}
+
+.work-titles:hover{
+  cursor: pointer;
+}
+
+.work-img{
+  width: 98vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.work-img img{
+  margin-top: 5vh;
+  height: 35vh;
+  width: 45vh;
+  opacity: 0.6;
+}
+
+.work-img img:hover{
+  cursor: pointer;
+  opacity: 2;
+}
+
+.lern-btn{
+  margin-top: 25vh;
+  height: 10vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #116ed8;
+}
+
+.lern-btn p{
+ text-align: center;
+ color: white;
+}
+
+
+/* Section 9 */
+
+.section9 {
+  height: 90vh;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.lern-btn2{
+  /* margin-top: -5vh; */
+  height: 10vh;
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #116ed8;
+}
+
+.lern-btn2 p{
+ text-align: center;
+ color: white;
+}
+
+.blog-card-container{
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 25px;
+}
+
+.blog-card{
+  height: 50vh;
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  text-align: center;
+}
+
+.blog-card img{
+  height: 25vh;
+  width: 35vh;
+}
+
+.b-sub{
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5b616b;
+  font-weight: 400;
+}
+
+.b-title{
+  font-size: 16px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.b-content{
+  font-size: 14px;
+  font-family:cursive;
+}
+
+
+/* Section 10 */
+
+.section10{
+  height: 90vh;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.contact-main{
+  height: 40vh;
+  width: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+/* left */
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  line-height: 5rem;
+}
+
+.c-left-data{
+  display: flex;
+  margin-top: 5vh;
+  justify-content: space-around;
+  gap: 4vh;
+}
+
+.c-left-data img{
+  height: 6vh;
+  width: 6vh;
+}
+
+.c-left-data p{
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-right{
+  display: flex;
+  flex-direction: column;
+}
+
+/* right */
+
+.contact-right{
+  margin-top: 9vh;
+  height: 30vh;
+  width: 50vh;
+  row-gap: 4vh;
+}
+
+.c-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.c-inputm{
+  width: 100%;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.c-submit{
+
+  height: 20vh;
+  width: 25vh;
+  padding: 20px;
+  color: white;
+  background-color: #116ed8;
+  border-radius: 5px;
+  border: 1px rgb(255, 252, 252) solid;
 }
