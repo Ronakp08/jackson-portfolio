@@ -987,6 +987,10 @@ input[type="radio"] {
   background-color: #116ed8;
 }
 
+.lern-btn:hover{
+  cursor: pointer;
+}
+
 .lern-btn p{
  text-align: center;
  color: white;
@@ -1013,6 +1017,10 @@ input[type="radio"] {
   background-color: #116ed8;
 }
 
+.lern-btn2:hover{
+  cursor: pointer;
+}
+
 .lern-btn2 p{
  text-align: center;
  color: white;
@@ -1033,6 +1041,10 @@ input[type="radio"] {
   flex-direction: column;
   row-gap: 2vh;
   text-align: center;
+}
+
+.blog-card:hover{
+  cursor: pointer;
 }
 
 .blog-card img{
@@ -1088,6 +1100,10 @@ input[type="radio"] {
   gap: 4vh;
 }
 
+.c-left-data:hover{
+  cursor: pointer;
+}
+
 .c-left-data img{
   height: 6vh;
   width: 6vh;
@@ -1098,10 +1114,7 @@ input[type="radio"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contact-right{
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* right */
 
@@ -1110,6 +1123,8 @@ input[type="radio"] {
   height: 30vh;
   width: 50vh;
   row-gap: 4vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .c-input {
@@ -1131,7 +1146,6 @@ input[type="radio"] {
 }
 
 .c-submit{
-
   height: 20vh;
   width: 25vh;
   padding: 20px;
@@ -1139,4 +1153,8 @@ input[type="radio"] {
   background-color: #116ed8;
   border-radius: 5px;
   border: 1px rgb(255, 252, 252) solid;
+}
+
+.c-submit:hover{
+  cursor: pointer;
 }
